@@ -17,7 +17,7 @@ void moveZeroes(int* nums, int numsSize){
     return ;
 }
 
-//Method 2
+//Method 2 bubble sort conception
 void moveZeroes(int* nums, int numsSize){
     while(true){
         int count = 0;
