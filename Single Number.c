@@ -16,7 +16,7 @@ int singleNumber(int* nums, int numsSize){
     return -1;
 }
 
-#Method 2
+#Method 2(best solution) exclusive or
 int singleNumber(int* nums, int numsSize){
     int n = nums[0] ;
     for (int i = 1; i< numsSize ; i++){
