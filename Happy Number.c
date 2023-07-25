@@ -43,9 +43,11 @@ int next_n(int n){  //回傳下一個n
 }
 
 bool isHappy(int n){
+    int slow = n;
+    int fast = n;
     do{
-        int slow = next_n(n);
-        int fast = next_n(next_n(n));
+        int slow = next_n(slow);
+        int fast = next_n(next_n(fast));
     }while(slow != fast);
     return fast == 1;
 }
